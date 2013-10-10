@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="myFirstApp">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="vendor/angularjs/js/angular.min.js"></script>
+    <script type="text/javascript" src="vendor/angularjs/js/resource.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div ng-controller="AppCtrl">
+    <button class="btn btn-primary pull-right" ng-click="logoutUser()" ng-show="showLogout">
+        Logout
+    </button>
+
+    <div ng-view></div>
+</div>
+</body>
+<script type="text/javascript" src="dpd.js"></script>
+<script type="text/javascript" src="js/module.js"></script>
+<script type="text/javascript" src="js/controller.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
